@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options => {
 options.AddPolicy("CodeWarsPolicy",
-builder => {builder.WithOrigins("http://localhost:5262")
+builder => {builder.WithOrigins("http://localhost:3000", "http://localhost:3001", "http://localhost:3002")
     .AllowAnyHeader()
     .AllowAnyMethod();
 });

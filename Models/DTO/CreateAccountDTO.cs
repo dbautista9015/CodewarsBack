@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace CodewarsBack.Models.DTO
 {
-    public class LoginDTO
+    public class CreateAccountDTO
     {
+        public int Id { get; set; }
         public string? CodewarsName { get; set; }
         public string? Password { get; set; }
     }
